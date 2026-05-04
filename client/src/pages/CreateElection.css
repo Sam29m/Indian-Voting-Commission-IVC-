@@ -1,0 +1,14 @@
+.create-page { max-width: 720px; margin: 0 auto; }
+.create-form { padding: 32px; }
+.form-textarea { resize: vertical; min-height: 80px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.candidates-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.candidate-row { display: grid; grid-template-columns: 1fr 1fr auto; gap: 12px; margin-bottom: 12px; align-items: center; }
+.btn-remove { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(239,68,68,0.1); color: var(--error); border-radius: var(--radius-sm); font-size: 0.875rem; transition: all var(--transition-fast); }
+.btn-remove:hover { background: rgba(239,68,68,0.2); }
+.btn-full { width: 100%; margin-top: 8px; }
+.candidates-section { margin-bottom: 20px; }
+@media (max-width: 768px) {
+  .form-row { grid-template-columns: 1fr; }
+  .candidate-row { grid-template-columns: 1fr; }
+}

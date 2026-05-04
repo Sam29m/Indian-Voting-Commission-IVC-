@@ -1,0 +1,10 @@
+.tfa-verify { text-align: center; padding: 40px 32px; }
+.tfa-verify-icon { font-size: 3rem; margin-bottom: 16px; }
+.tfa-verify h2 { font-size: 1.5rem; margin-bottom: 8px; }
+.tfa-verify-desc { color: var(--text-secondary); margin-bottom: 32px; font-size: 0.9375rem; }
+.tfa-digit-row { display: flex; gap: 8px; justify-content: center; margin-bottom: 24px; }
+.tfa-digit { width: 48px; height: 56px; text-align: center; font-size: 1.5rem; font-weight: 700; font-family: 'Courier New', monospace; background: var(--bg-input); border: 2px solid var(--border-color); border-radius: var(--radius-md); color: var(--text-primary); transition: all var(--transition-fast); }
+.tfa-digit:focus { border-color: var(--accent-primary); box-shadow: 0 0 0 3px rgba(6,182,212,0.15); }
+.tfa-digit-filled { border-color: var(--accent-primary); background: rgba(6,182,212,0.05); }
+.tfa-verifying { display: flex; align-items: center; justify-content: center; gap: 8px; color: var(--text-secondary); font-size: 0.9375rem; }
+.spinner-sm { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.2); border-top-color: var(--accent-primary); border-radius: 50%; animation: spin 0.6s linear infinite; display: inline-block; }

@@ -1,0 +1,17 @@
+.tfa-setup { padding: 24px; }
+.tfa-header { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+.tfa-icon { font-size: 2rem; }
+.tfa-header h3 { font-size: 1.125rem; font-weight: 700; margin-bottom: 2px; }
+.tfa-desc { font-size: 0.8125rem; color: var(--text-muted); }
+.tfa-badge-on { margin-left: auto; padding: 4px 12px; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; background: rgba(16,185,129,0.15); color: var(--success); border-radius: var(--radius-full); letter-spacing: 0.05em; }
+.tfa-qr-section { text-align: center; }
+.tfa-instruction { font-size: 0.9375rem; color: var(--text-secondary); margin-bottom: 16px; }
+.tfa-qr-image { width: 200px; height: 200px; margin: 0 auto 16px; border-radius: var(--radius-md); border: 2px solid var(--border-color); }
+.tfa-secret { margin-bottom: 24px; }
+.tfa-secret-label { font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); font-weight: 600; margin-right: 8px; }
+.tfa-secret-code { font-size: 0.8125rem; color: var(--text-accent); background: rgba(6,182,212,0.08); padding: 4px 10px; border-radius: var(--radius-sm); word-break: break-all; }
+.tfa-verify-row { display: flex; gap: 12px; justify-content: center; align-items: center; }
+.tfa-code-input { max-width: 160px; text-align: center; font-size: 1.5rem; font-weight: 700; letter-spacing: 0.3em; font-family: 'Courier New', monospace; }
+.tfa-enabled-section { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.tfa-status-active { display: flex; align-items: center; gap: 8px; font-size: 0.9375rem; color: var(--success); font-weight: 600; }
+.tfa-check { font-size: 1.25rem; }
