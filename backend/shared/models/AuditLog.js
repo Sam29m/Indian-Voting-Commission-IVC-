@@ -26,6 +26,7 @@ const auditLogSchema = new mongoose.Schema(
         'TICKET_UPDATED',
         'ADMIN_ACTION',
         'SYSTEM_EVENT',
+        'MITRA_CHAT',
       ],
     },
     userId: {

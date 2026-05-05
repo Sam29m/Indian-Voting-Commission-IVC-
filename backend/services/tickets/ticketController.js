@@ -63,3 +63,14 @@ exports.respondToTicket = async (req, res) => {
     res.json(ticket);
   } catch (error) { res.status(500).json({ message: 'Failed to respond', error: error.message }); }
 };
+
+exports.deleteTicket = async (req, res) => {
+  try {
+    const ticket = await SupportTicket.findById(req.params.id);
+    if (!ticket) return res.status(404).json({ message: 'Ticket not found' });
+    if (req.user.role !== 'admin' && ticket.userId.toString() !== req.user._id.toString()) return res.status(403).json({ message: 'Access denied' });
+    await SupportTicket.findByIdAndDelete(req.params.id);
+    await AuditLog.log({ action: 'TICKET_DELETED', userId: req.user._id, targetId: ticket._id.toString(), targetType: 'Ticket', details: `Subject: ${ticket.subject}`, ipAddress: req.ip });
+    res.json({ message: 'Ticket deleted successfully' });
+  } catch (error) { res.status(500).json({ message: 'Failed to delete ticket', error: error.message }); }
+};

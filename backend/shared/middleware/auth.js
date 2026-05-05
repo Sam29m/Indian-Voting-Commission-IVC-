@@ -1,7 +1,8 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 
-const JWT_SECRET = process.env.JWT_SECRET;
+const JWT_SECRET = process.env.JWT_SECRET || 'ivc_jwt_secret_key_2026_production';
+console.log('🔐 JWT Secret initialized');
 
 const auth = async (req, res, next) => {
   try {

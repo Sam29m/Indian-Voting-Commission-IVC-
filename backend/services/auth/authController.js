@@ -55,7 +55,10 @@ exports.login = async (req, res) => {
       userName: user.name,
       demo_otp: otp,
     });
-  } catch (error) { res.status(500).json({ message: 'Server error', error: error.message }); }
+  } catch (error) {
+    console.error('Login Error:', error);
+    res.status(500).json({ message: 'Server error', error: error.message });
+  }
 };
 
 // @desc    Get current user
